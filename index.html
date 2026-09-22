@@ -649,7 +649,7 @@
 
     <!-- BUSCADOR EN TIEMPO REAL -->
     <div class="search-box">
-      <input type="text" class="search-input" id="searchInput" placeholder="🔍 Buscar hotel, hospital, remis o servicio..." onkeyup="filterContent()">
+      <input type="text" class="search-input" id="searchInput" placeholder="🔍 Buscar estacionamiento, hotel, hospital, remis..." onkeyup="filterContent()">
     </div>
 
     <!-- ANTES DE VENIR -->
@@ -657,14 +657,18 @@
       <div class="card-title">📌 Antes de venir</div>
       <div class="card-details" style="margin-bottom: 0;">
         <span>• <strong>Sede:</strong> Complejo Pinamar Park (Ruta 11, Km 398,5)</span>
-        <span>• <strong>Reservas:</strong> Consultá las fechas límite antes del 15 de sept. 2026</span>
-        <span>• <strong>Estacionamiento:</strong> Habilitado dentro del complejo.</span>
+        <span>• <strong>Llegada:</strong> Se recomienda llegar con suficiente tiempo de antelación.</span>
+        <span>• <strong>Estacionamiento:</strong> Seguir siempre las indicaciones de los hermanos acomodadores.</span>
       </div>
     </div>
 
     <!-- MENÚ RÁPIDO -->
     <div class="section-title">Guía de Asistencia</div>
     <div class="grid-menu">
+      <a href="#estacionamiento" class="menu-card">
+        <span class="icon">🚗</span>
+        <span class="label">Estacionamiento</span>
+      </a>
       <a href="#programa" class="menu-card">
         <span class="icon">📄</span>
         <span class="label">Programa</span>
@@ -685,10 +689,18 @@
         <span class="icon">🍽️</span>
         <span class="label">Comer</span>
       </a>
-      <a href="#servicios" class="menu-card">
-        <span class="icon">⛽</span>
-        <span class="label">Servicios</span>
-      </a>
+    </div>
+
+    <!-- SECCIÓN ESTACIONAMIENTO -->
+    <div class="section-title" id="estacionamiento">🚗 Estacionamiento del Predio</div>
+    <div class="card searchable" style="border-left: 4px solid var(--warning);">
+      <div class="card-title">Instrucciones de Estacionamiento e Ingreso</div>
+      <div class="card-subtitle">Indicaciones para una llegada ordenada</div>
+      <div class="card-details" style="margin-top: 8px;">
+        <span>• <strong>Llegada anticipada:</strong> Le sugerimos salir con tiempo para evitar demoras en el ingreso sobre la Ruta 11.</span>
+        <span>• <strong>Colaboración:</strong> Al ingresar al predio, por favor preste atenta atención y siga en todo momento las instrucciones de los hermanos encargados del estacionamiento.</span>
+        <span>• <strong>Ordenamiento:</strong> Los vehículos serán ubicados de forma secuencial para optimizar el espacio y facilitar una salida ágil al finalizar la jornada.</span>
+      </div>
     </div>
 
     <!-- SECCIÓN PROGRAMA OFICIAL -->
@@ -730,7 +742,6 @@
           <div class="detail-item">🅿️ <strong>Estacionamiento:</strong> Gratis</div>
           <div class="detail-item">☕ <strong>Desayuno:</strong> No disponible</div>
         </div>
-        <div class="deadline-badge">⚠️ Reservar antes de: 15 sept 2026</div>
         <div class="action-group">
           <a href="tel:+542254526327" class="btn btn-call">📞 Reservar</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Av.+Espora+2136+Valeria+del+Mar" target="_blank" class="btn btn-map">📍 Mapa</a>
@@ -750,7 +761,6 @@
           <div class="detail-item">🅿️ <strong>Estacionamiento:</strong> Gratis</div>
           <div class="detail-item">☕ <strong>Desayuno:</strong> Gratis</div>
         </div>
-        <div class="deadline-badge">⚠️ Reservar antes de: 15 sept 2026</div>
         <div class="action-group">
           <a href="tel:+542254480465" class="btn btn-call">📞 Reservar</a>
           <a href="https://www.google.com/maps/search/?api=1&query=De+los+Tritones+210+Pinamar" target="_blank" class="btn btn-map">📍 Mapa</a>
@@ -770,7 +780,6 @@
           <div class="detail-item">🅿️ <strong>Estacionamiento:</strong> Gratis</div>
           <div class="detail-item">☕ <strong>Desayuno:</strong> Gratis</div>
         </div>
-        <div class="deadline-badge">⚠️ Reservar antes de: 15 sept 2026</div>
         <div class="action-group">
           <a href="tel:+542254598858" class="btn btn-call">📞 Reservar</a>
           <a href="https://www.google.com/maps/search/?api=1&query=De+las+Burriquetas+247+Pinamar" target="_blank" class="btn btn-map">📍 Mapa</a>
@@ -790,7 +799,6 @@
           <div class="detail-item">🅿️ <strong>Estacionamiento:</strong> Gratis</div>
           <div class="detail-item">☕ <strong>Desayuno:</strong> Gratis</div>
         </div>
-        <div class="deadline-badge">⚠️ Reservar antes de: 15 sept 2026</div>
         <div class="action-group">
           <a href="tel:+541140995892" class="btn btn-call">📞 Reservar</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Ciruelo+24+Carilo" target="_blank" class="btn btn-map">📍 Mapa</a>
@@ -928,7 +936,7 @@
       <button style="background:none; border:none; color:white; font-size:1.2rem; cursor:pointer;" onclick="toggleChat()">✕</button>
     </div>
     <div class="chat-messages" id="chatMessages">
-      <div class="chat-msg bot">¡Hola! Soy tu asistente virtual inteligente. ¿En qué puedo ayudarte sobre la asamblea, farmacias, alojamientos o servicios en Pinamar?</div>
+      <div class="chat-msg bot">¡Hola! Soy tu asistente virtual inteligente. ¿En qué puedo ayudarte sobre la asamblea, estacionamiento, alojamientos o servicios en Pinamar?</div>
     </div>
     <div class="chat-input-area">
       <input type="text" class="chat-input" id="chatInput" placeholder="Escribe tu consulta aquí..." onkeypress="handleChatKey(event)">
@@ -936,11 +944,11 @@
     </div>
   </div>
 
-  <!-- MODAL AVISO -->
+  <!-- MODAL AVISO DE ESTACIONAMIENTO -->
   <div class="modal-overlay" id="noticeModal">
     <div class="modal-content">
       <div class="modal-header">
-        🔔 <span id="noticeTitle">INFORMACIÓN IMPORTANTE</span>
+        🚗 <span id="noticeTitle">Aviso sobre el Estacionamiento</span>
       </div>
       <div class="modal-body" id="noticeMessage">
         Mensaje del aviso aquí.
@@ -955,6 +963,10 @@
       <span class="nav-icon">⌂</span>
       <span>Inicio</span>
     </a>
+    <a href="#estacionamiento" class="nav-item">
+      <span class="nav-icon">🚗</span>
+      <span>Park</span>
+    </a>
     <a href="#programa" class="nav-item">
       <span class="nav-icon">📄</span>
       <span>Programa</span>
@@ -962,10 +974,6 @@
     <a href="#hoteles" class="nav-item">
       <span class="nav-icon">🏨</span>
       <span>Hoteles</span>
-    </a>
-    <a href="#salud" class="nav-item">
-      <span class="nav-icon">🏥</span>
-      <span>Salud</span>
     </a>
   </nav>
 
@@ -976,8 +984,8 @@
 
   <script>
     const SHOW_NOTICE = true;
-    const NOTICE_TITLE = "INFORMACIÓN IMPORTANTE";
-    const NOTICE_MESSAGE = "Recuerde realizar su reserva de alojamiento antes del 15 de septiembre de 2026 para aprovechar las tarifas especiales del convenio.";
+    const NOTICE_TITLE = "INFORMACIÓN DE ESTACIONAMIENTO";
+    const NOTICE_MESSAGE = "Le recomendamos salir con suficiente tiempo de anticipación para llegar con tranquilidad. Al ingresar al predio, por favor siga atentamente las indicaciones de los hermanos encargados del estacionamiento para mantener un flujo ordenado.";
 
     document.addEventListener("DOMContentLoaded", () => {
       if (SHOW_NOTICE) {
@@ -1073,7 +1081,6 @@
       container.appendChild(botDiv);
       container.scrollTop = container.scrollHeight;
 
-      // Motor Inteligente con Gemini API / Respaldo de Conocimiento Dinámico
       try {
         const reply = await queryGeminiOrLocal(msg);
         botDiv.innerText = reply;
@@ -1108,6 +1115,9 @@
     function getSmartFallback(q) {
       const query = q.toLowerCase();
       
+      if (query.includes("estaciona") || query.includes("auto") || query.includes("cochera") || query.includes("vehiculo") || query.includes("estacionar")) {
+        return "El predio cuenta con estacionamiento. Le recomendamos llegar con tiempo suficiente y seguir atenta y amablemente las indicaciones de los hermanos encargados del estacionamiento.";
+      }
       if (query.includes("farmacia") || query.includes("remedio") || query.includes("medicamento")) {
         return "Las farmacias en Pinamar tienen turnos rotativos las 24 hs. Podés consultar las abiertas en la sección 'Salud y Emergencias' o verlas en Google Maps desde el botón del sitio.";
       }
@@ -1115,7 +1125,7 @@
         return "El Hospital Municipal Dr. Pepe Olaechea atiende urgencias las 24 hs en Av. Enrique Shaw 255. También podés llamar al SAME (107) o Policía (911).";
       }
       if (query.includes("hotel") || query.includes("alojamiento") || query.includes("hospedaje") || query.includes("dormir")) {
-        return "Tenemos hoteles con convenio como Hostería HG ($50.000) o Dalmacia ($90.000). Recordá hacer tu reserva antes del 15 de septiembre de 2026.";
+        return "Tenemos hoteles con convenio como Hostería HG ($50.000) o Dalmacia ($90.000) listados en la sección Alojamiento.";
       }
       if (query.includes("programa") || query.includes("horario") || query.includes("discurso")) {
         return "Podés acceder al programa oficial completo ingresando al botón 'Ver Programa Oficial en JW.ORG' en la sección Programa.";
@@ -1130,7 +1140,7 @@
         return "La asamblea se realiza en Complejo Pinamar Park (Ruta 11, Km 398,5). Usá los botones de Google Maps o Waze en la parte superior para ir con GPS.";
       }
 
-      return "Entendido. Podés navegar por las secciones de Alojamiento, Salud, Transporte o Programa en la página para encontrar más detalles sobre " + q + ".";
+      return "Entendido. Podés navegar por las secciones de Estacionamiento, Alojamiento, Salud, Transporte o Programa en la página para encontrar más detalles sobre " + q + ".";
     }
 
     /* NAVEGACIÓN ACTIVA EN SCROLL */
